@@ -116,7 +116,15 @@ const Projects = () => {
               </Suspense>
             </Center>
 
-            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
+            <OrbitControls
+              enableRotate
+              minPolarAngle={Math.PI / 2.2} // Restrict up/down movement
+              maxPolarAngle={Math.PI / 1.8} // Restrict up/down movement
+              minAzimuthAngle={0} // Prevent horizontal rotation (Y-axis)
+              maxAzimuthAngle={0} // Prevent horizontal rotation (Y-axis)
+              enableZoom={false} // Disable zoom
+              enablePan={false} // Disable panning
+            />
           </Canvas>
         </div>
       </div>
