@@ -41,7 +41,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex flex-col gap-3 mx-auto mt-28 sm:mt-36 c-space w-full">
+      <div className="flex flex-col gap-3 mx-auto mt-28 sm:mt-36 c-space">
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-arapey">
           Hi! I am Chiazamoku <span className="waving-hand">👋🏼</span>
         </p>
